@@ -13,11 +13,11 @@ const amigos = [
 ];
 
 // Obtén el botón y el elemento donde se mostrará el amigo
-const botonAmigo = document.getElementById("boton-amigo");
-const amigoAleatorio = document.getElementById("amigo-aleatorio");
+const agregAramigo = document.getElementById("boton-amigo");
+const sortearAmigo = document.getElementById("amigo-aleatorio");
 
 // Agrega un "event listener" al botón
-botonAmigo.addEventListener("click", () => {
+agregarAmigo.addEventListener("click", () => {
   // Genera un número aleatorio basado en la longitud del array
   const indiceAleatorio = Math.floor(Math.random() * amigos.length);
   
@@ -27,3 +27,4 @@ botonAmigo.addEventListener("click", () => {
   // Muestra el nombre del amigo en el HTML
   amigoAleatorio.textContent = `Tu amigo aleatorio es: ${amigoSeleccionado}`;
 });
+
